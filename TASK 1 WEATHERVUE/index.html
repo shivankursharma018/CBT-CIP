@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Vue</title>
-    <script src="index.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="index.js"></script>
 </head>
 <body>
     
+    <form class="weather-form">
+        <input type="text" class="city-weather" placeholder="City">
+        <button type="submit">Get Weather</button>
+    </form>
+
+    <div class="card" style="display: none;">
+        <!-- <h1 class="city-name">Delhi</h1>
+        <p class="temp-info">90 C</p>
+        <p class="humidity-info">Humidity: 90%</p>
+        <p class="desc">Rainfall</p>
+        <p class="weather-emoji">🌧️</p>
+        <p class="error-info">Pls enter a city</p> -->
+    </div>
+
 </body>
 </html>
