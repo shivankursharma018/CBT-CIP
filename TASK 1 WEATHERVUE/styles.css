@@ -1,15 +1,126 @@
 * {
-    padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.weather-form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
+.city-name {
+    padding: 1rem;
+    border: 0.2rem solid #007BFF;
+    border-radius: 0.5rem;
+    width: 80vw;
+    max-width: 25rem;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+.city-name:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+
+.get-weather-btn {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.get-weather-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+.get-weather-btn:active {
+    transform: translateY(0);
+}
+.get-weather-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
 }
 
 .card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    display: none;
+    max-width: 30vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 50vh;
-    width: 50vw;
-    background-color: antiquewhite;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #007BFF;
+}
+
+p {
+    margin: 0.5rem 0;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.weatherEmoji {
+    font-size: 8vw;
+    margin-top: 1rem;
+}
+
+.errDisplay {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .weatherEmoji {
+        font-size: 8vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .city-name {
+        width: 100%;
+    }
+    h1 {
+        font-size: 1.2rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+    .weatherEmoji {
+        font-size: 10vw;
+    }
 }
