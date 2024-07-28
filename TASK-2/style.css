@@ -1,4 +1,275 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: Verdana, Geneva;
+    transition: background 200ms ease-in, color 200ms ease-in;
+}
+
+.light {
+    background-color: #ECEFF1;
+    color: #37474F;
+}
+
+.dark {
+    background-color: #222222;
+    color: #DEE4E7;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+    transform: scale(1);
+    transition: ease-in-out 100ms;
+    cursor: pointer;
+}
+
+a:hover {
+    transform: scale(1.2);
+}
+
+button {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    color: currentColor;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+p {
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 25px;
+}
+
+ul {
+    padding-left: 40px;
+}
+
+ul ul {
+    padding-left: 40px;
+}
+
+nav {
+    height: 4em;
+    width: 100%;
+    overflow: auto;
+    background: radial-gradient(circle at 34.2% 44.3%, rgb(233, 79, 79) 6.5%, rgb(111, 34, 142) 100.2%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    z-index: 99;
+}
+
+.navbar-elements {
+    height: auto;
+    width: auto;
+    color: white;
+    font-size: 1rem;
+    margin: 20px;
+}
+
+#Home {
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    display: flex;
+    margin-top: 4em;
+    position: relative;
+}
+
+#Home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+}
+
+#home-left {
+    height: inherit;
+    width: 40%;
+    text-align: center;
+    padding: 0% 7%;
+    position: relative;
+    z-index: 2;
+}
+
+#home-right {
+    height: inherit;
+    width: 60%;
+    text-align: start;
+    font-size: 1.4rem;
+    padding: 0% 7%;
+    position: relative;
+    z-index: 2;
+}
+
+#home-left,
+#home-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-btns {
+    width: 200px;
+    height: 50px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    background-color: #b2adb4;
+    color: black;
+    margin: 10px 10px;
+    justify-content: space-evenly;
+}
+
+#home-left > img {
+    display: block;
+    border-radius: 10px;
+}
+
+#home-right i {
+    font-size: 50px;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+/* Page 1 => About, Skills
+   Page 2 => Projects
+   Page 3 => Education, MSX */
+
+#page1-main {
+    text-align: center;
+    padding: 80px 0px;
+    margin: 10px;
+}
+
+#aboutImage {
+    height: 240px;
+    border-radius: 5%;
+}
+
+#page1-main-text {
+    width: 35%;
+    text-align: start;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+#page1-main-media {
+    width: 35%;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.techLogo {
+    height: 80px;
+    width: auto;
+    padding: 5px;
+}
+
+#projects {
+    padding: 80px 0px;
+    margin: 0px 40px;
+    justify-content: center;
+    text-align: center;
+}
+
+.projectCard {
+    height: auto;
+    width: 30em;
+    max-height: 40em;
+    border: 2px solid rgb(186, 59, 59);
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    transform: scale(1);
+    transition: ease-in-out 100ms;
+}
+
+.projectCard:hover {
+    transform: scale(1.03);
+}
+
+.upperCard {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 0px 0px 0px;
+}
+
+.lowerCard {
+    padding: 0px 30px 30px 30px;
+}
+
+.liveButton {
+    background-color: rgb(42, 94, 236);
+    color: #DEE4E7;
+}
+
+.githubButton {
+    background-color: rgb(64, 63, 63);
+    color: #DEE4E7;
+}
+
+#achievements {
+    padding: 80px 0px;
+    text-align: start;
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.achievementsCard {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.achievementsBlock {
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 45%;
+    max-width: 80%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.achievementsBlock h4 {
+    color: #505050;
+    text-align: end;
+}
+
+.listItems {
+    padding-left: 20px;
+    text-align: start;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    color: #fff;    
+    background-color: rgb(40, 40, 40);
+    padding: 80px 0px;
+}
+
+#contact-links-left, #contact-links-right {
+    display: inline-flex;
+    text-align: start;
+    flex-direction: column;
+    padding: 10px 50px 0px 50px;
 }
