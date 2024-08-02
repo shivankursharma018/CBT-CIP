@@ -1,9 +1,9 @@
 # My Projects
 
 ## Task-1 WeatherVue
+<a href="https://shivankursharma018.github.io/CBT-CIP/TASK-1/">Live Link</a>
 
 ![WeatherVue](/imgs/WeatherVue.jpeg)
-<a href="https://shivankursharma018.github.io/CBT-CIP/TASK-1/">Live Link</a>
 
 **Description**: WeatherVue is a modern weather application designed to provide users with accurate and real-time weather updates. Utilizing a sleek and intuitive interface, WeatherVue allows users to easily access current weather conditions, hourly forecasts, and extended forecasts for multiple locations. The app integrates various weather data sources to ensure reliability and accuracy, making it an essential tool for planning your day.
 
